@@ -33,4 +33,29 @@ For an existing project -> use `cargo init` to convert it to Cargo.
 .\target\debug\<project_name>.exe
 ```
 
-- 
+- Command to build and run in one step:
+```rust
+cargo run
+```
+- If the code hasn't changed, Cargo just runs without rebuilding.
+- If the code has changed, Cargo rebuilds before running.
+
+### **2.4. Checking code without creating a binary**
+- Command:
+```rust
+cargo check
+```
+- Only checks whether the code compiles, does not create an executable.
+- Faster than `cargo build` -> useful for continuously checking code during development.
+
+### **2.5. Other advantages**
+- Build files are stored in `target/debug/` instead of the project directory.
+- Cargo commands are the same across all operating systems -> convenient for cross-platform development.
+
+### **2.6. Summary of important commands**
+| Command | Function |
+|----------|----------|
+| `cargo new <project>` | Create a new project |
+| `cargo build` | Build the project (debug, create binary) |
+| `cargo run` | Build + run the project in one step |
+| `cargo check` | Check if the code compiles, without creating a binary |
