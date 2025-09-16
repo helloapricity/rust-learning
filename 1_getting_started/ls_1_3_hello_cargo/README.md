@@ -1,14 +1,20 @@
 HELLO, CARGO!
 Cargo is Rust's build system and package manager. It builds code,
+
 downloads and builds dependencies. Most Rust projects use Cargo.
+
 Installing Rust officially includes Cago; check with `cargo --version`.
 
-1. CREATING A PROJECT WITH CARGO
+**1. CREATING A PROJECT WITH CARGO**
+
 `cargo new` creates a standard project: Cargo.toml + src/main.rs + a Git repository.
-Source code goes in src, configuration is in Cargo.toml. Add dependence in [dependencies].
+
+Source code goes in src, configuration is in Cargo.toml. Add dependence in[dependencies].
+
 For an existing project -> use `cargo init` to convert it to Cargo.
 
-2. BUILDING AND RUNNING A CARGO PROJECT
+**2. BUILDING AND RUNNING A CARGO PROJECT**
+
 **2.1. Creating a new project**
 - Command: `cargo new <project_name>`
 - Cargo generates a basic project directory structure.
@@ -24,5 +30,6 @@ For an existing project -> use `cargo init` to convert it to Cargo.
 - Directly using the path in Windows:
 ```rust
 .\target\debug\<project_name>.exe
+```
 
 - 
