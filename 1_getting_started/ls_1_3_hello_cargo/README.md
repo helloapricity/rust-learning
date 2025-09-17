@@ -59,3 +59,12 @@ cargo check
 | `cargo build` | Build the project (debug, create binary) |
 | `cargo run` | Build + run the project in one step |
 | `cargo check` | Check if the code compiles, without creating a binary |
+
+## **3. BUILDING FOR RELEASE**
+- `cargo build --release`: Used to compile a Rust program with optimizations.
+- **Output:** The executable is placed in `target/release` (instead of `target/debug`).
+- **Optimizations:** Make the program run **faster**, but **increase compile time**.
+- **Two profiles:**
+    - **Development:** Fast compilation for frequent testing and changes.
+    - **Release:** Optimized compilation for the **final version** delivered to users.
+- **Benchmarking:** When measuring performance, run the **executable in** `target/release` for accurate results.
